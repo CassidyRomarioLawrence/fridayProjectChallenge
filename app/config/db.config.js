@@ -1,6 +1,7 @@
+// require('dotenv').config();
 module.exports = {
   HOST: "localhost",
-  USER: "root",
-  PASSWORD: "@17ZooGang38",
+  USER: "CassidyLawrence",
+  PASSWORD: "17ZooGang38@",
   DB: "topshopper"
 };

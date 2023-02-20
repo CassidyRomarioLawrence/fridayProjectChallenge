@@ -1,6 +1,7 @@
 const sql = require("./db.js");
 
-// constructor
+const { hash, compare, hashSync } = require('bcrypt');
+
 const Vans = function(vans) {
     this.sneakerName = vans.sneakerName;
     this.sneakerSize = vans.sneakerSize;
@@ -9,7 +10,7 @@ const Vans = function(vans) {
 };
 
 Vans.create = (newVans, result) => {
-  sql.query("INSERT INTO tutorials SET ?", newVans, (err, res) => {
+  sql.query("INSERT INTO vansSneaker SET ?", newVans, (err, res) => {
     if (err) {
       console.log("error: ", err);
       result(err, null);

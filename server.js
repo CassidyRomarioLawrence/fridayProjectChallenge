@@ -1,6 +1,8 @@
 const express = require("express");
 const cors = require("cors");
 
+const { message } = require('./app/middleware/message');
+
 const app = express();
 
 var corsOptions = {
@@ -13,7 +15,7 @@ app.use(express.json());
 
 app.use(express.urlencoded({ extended: true }));
 
-app.get("/", (req, res) => {
+app.get("/", message ,(req, res) => {
   res.json({ message: "Welcome to Vans Sneaker Store." });
 });
 
