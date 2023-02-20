@@ -1,38 +1,6 @@
 const Vans = require("../models/vans.model.js");
 
 exports.create = (req, res) => {
-  
-};
-
-exports.findAll = (req, res) => {
-  
-};
-
-exports.findOne = (req, res) => {
-  
-};
-
-exports.findAllSizes = (req, res) => {
-  
-};
-
-exports.findAllColor = (req, res) => {
-  
-};
-
-exports.update = (req, res) => {
-  
-};
-
-exports.delete = (req, res) => {
-  
-};
-
-exports.deleteAll = (req, res) => {
-  
-};
-
-exports.create = (req, res) => {
   if (!req.body) {
     res.status(400).send({
       message: "Content can not be empty!"
